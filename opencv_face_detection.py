@@ -13,7 +13,7 @@ while True:
     faces = face_cascade.detectMultiScale(image_gray, 1.3, 5)
     # for every face, draw a blue rectangle
     for x, y, width, height in faces:
-        cv2.rectangle(image, (x, y), (x + width, y + height), color=(0, 255, 0v), thickness=2)
+        cv2.rectangle(image, (x, y), (x + width, y + height), color=(0, 255, 0), thickness=2)
     cv2.imshow("image", image)
     if cv2.waitKey(1) == ord("q"):
         break
